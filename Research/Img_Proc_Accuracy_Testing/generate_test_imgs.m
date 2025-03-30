@@ -27,11 +27,11 @@ for ball_pozish = 1:4
         throwaway = blenderLink(client,width,height,ballx(ball_pozish),bally(ball_pozish),ballz(ball_pozish),0,0,0,"tennisBall");
 
 
-        for counter = 0:60:180 %baseline 60, 120, 180 mm
+        for counter = 1:1:3 %baseline 1, 2, 3 m
             
             %camera pozish update
-            Camera1_baseline = (counter/2)/1000;
-            Camera2_baseline = -(counter/2)/1000;
+            Camera1_baseline = (counter/2);
+            Camera2_baseline = -(counter/2);
         
             %take pics at current baselines
             image1 = blenderLink(client,width,height,0,Camera1_baseline,32,0,0,90,"Camera1");
