@@ -1,19 +1,19 @@
 % Shams Belal, CPET 563.01L02 - 2/16/25
 
-leftarrImg = {'BL1_CamLeft_4_-5_2.png', 'BL1_CamLeft_-4_-2_3.png', 'BL1_CamLeft_2_5_2.png', 'BL1_CamLeft_-1_1_2.png';
-              'BL2_CamLeft_4_-5_2.png', 'BL2_CamLeft_-4_-2_3.png', 'BL2_CamLeft_2_5_2.png', 'BL2_CamLeft_-1_1_2.png';
-              'BL3_CamLeft_4_-5_2.png', 'BL3_CamLeft_-4_-2_3.png', 'BL3_CamLeft_2_5_2.png', 'BL3_CamLeft_-1_1_2.png'};
+leftarrImg = {'BL0.06_CamLeft_4_-5_2.png', 'BL0.06_CamLeft_-4_-2_3.png', 'BL0.06_CamLeft_2_5_2.png', 'BL0.06_CamLeft_-1_1_2.png';
+              'BL0.07_CamLeft_4_-5_2.png', 'BL0.07_CamLeft_-4_-2_3.png', 'BL0.07_CamLeft_2_5_2.png', 'BL0.07_CamLeft_-1_1_2.png';
+              'BL0.08_CamLeft_4_-5_2.png', 'BL0.08_CamLeft_-4_-2_3.png', 'BL0.08_CamLeft_2_5_2.png', 'BL0.08_CamLeft_-1_1_2.png'};
 
-rightarrImg = {'BL1_CamRight_4_-5_2.png', 'BL1_CamRight_-4_-2_3.png', 'BL1_CamRight_2_5_2.png', 'BL1_CamRight_-1_1_2.png';
-              'BL2_CamRight_4_-5_2.png', 'BL2_CamRight_-4_-2_3.png', 'BL2_CamRight_2_5_2.png', 'BL2_CamRight_-1_1_2.png';
-              'BL3_CamRight_4_-5_2.png', 'BL3_CamRight_-4_-2_3.png', 'BL3_CamRight_2_5_2.png', 'BL3_CamRight_-1_1_2.png'};
+rightarrImg = {'BL0.06_CamRight_4_-5_2.png', 'BL0.06_CamRight_-4_-2_3.png', 'BL0.06_CamRight_2_5_2.png', 'BL0.06_CamRight_-1_1_2.png';
+              'BL0.07_CamRight_4_-5_2.png', 'BL0.07_CamRight_-4_-2_3.png', 'BL0.07_CamRight_2_5_2.png', 'BL0.07_CamRight_-1_1_2.png';
+              'BL0.08_CamRight_4_-5_2.png', 'BL0.08_CamRight_-4_-2_3.png', 'BL0.08_CamRight_2_5_2.png', 'BL0.08_CamRight_-1_1_2.png'};
 
 
 BallXcoord = {4, -4, 2, -1};    CalcX = {0, 0, 0, 0};   ErrorXPerc = {0, 0, 0, 0};
 BallYcoord = {-5, -2, 5, 1};    CalcY = {0, 0, 0, 0};   ErrorYPerc = {0, 0, 0, 0};
 BallZcoord = {2, 3, 2, 2};      CalcZCameraPers = {0, 0, 0, 0};   CalcZWorldPers = {0, 0, 0, 0}; ErrorZPerc = {0, 0, 0, 0};
 
-baseline = {1000, 2000, 3000};
+baseline = {60, 70, 80};
 
 XErrorPercAVG = {0, 0, 0};
 YErrorPercAVG = {0, 0, 0};
@@ -84,9 +84,16 @@ for counter = 1:3
         d = (abs((xLeft - cxLeft) - (xRight - cxRight)) * ps); % disparity [mm]
         CalcZCameraPers{framecounter} = ((baseline{counter} * f)/d)/1000;                % depth [m]
         CalcZWorldPers{framecounter} = camDepth - CalcZCameraPers{framecounter};         % World Z [m]
-        CalcX{framecounter} = CalcZCameraPers{framecounter} * ((xLeft - cxLeft) * ps) / f;
-        CalcY{framecounter} = CalcZCameraPers{framecounter} * ((cyLeft - yLeft) * ps) / f;  % REVERSED because (0,0) in image is top left
+
+        % Calculate X
+        CalcXLeft = CalcZCameraPers{framecounter} * ((xLeft - cxLeft) * ps) / f;     % Left Camera 
+        CalcXRight = CalcZCameraPers{framecounter} * ((xRight - cxRight) * ps) / f;  % Right Camera
+        CalcX{framecounter} = (CalcXLeft + CalcXRight) / 2;                          % Average
         
+        % Calculate Y (REVERSED from original equation because (0,0) in image is top left)
+        CalcYLeft = CalcZCameraPers{framecounter} * ((cyLeft - yLeft) * ps) / f;     % Left Camera 
+        CalcYRight = CalcZCameraPers{framecounter} * ((cyRight - yRight) * ps) / f;  % Right Camera
+        CalcY{framecounter} = (CalcYLeft + CalcYRight) / 2;                          % Average
         
 
         % Debug
