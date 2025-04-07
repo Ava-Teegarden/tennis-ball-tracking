@@ -84,10 +84,13 @@ for counter = 1:3
         d = (abs((xLeft - cxLeft) - (xRight - cxRight)) * ps); % disparity [mm]
         CalcZCameraPers{framecounter} = ((baseline{counter} * f)/d)/1000;                % depth [m]
         CalcZWorldPers{framecounter} = camDepth - CalcZCameraPers{framecounter};         % World Z [m]
-        CalcX{framecounter} = CalcZCameraPers{framecounter} * ((xLeft - cxLeft) * ps) / f;
-        CalcY{framecounter} = CalcZCameraPers{framecounter} * ((cyLeft - yLeft) * ps) / f;  % REVERSED because (0,0) in image is top left
-        
-        
+        CalcXLeft = CalcZCameraPers{framecounter} * ((xLeft - cxLeft) * ps) / f;
+        CalcXRight = CalcZCameraPers{framecounter} * ((xRight - cxRight) * ps) / f;
+        CalcX{framecounter} = (CalcXLeft + CalcXRight) / 2;
+
+        CalcYLeft = CalcZCameraPers{framecounter} * ((cyLeft - yLeft) * ps) / f;  % REVERSED because (0,0) in image is top left
+        CalcYRight = CalcZCameraPers{framecounter} * ((cyRight - yRight) * ps) / f;
+        CalcY{framecounter} = (CalcYLeft + CalcYRight) / 2;
 
         % Debug
         fprintf('Baseline: %d[mm], Calculated X: %d[m], Calculated Y: %d[m], Calculated Z: %d[m]', baseline{counter}, CalcX{framecounter}, CalcY{framecounter}, CalcZWorldPers{framecounter})
