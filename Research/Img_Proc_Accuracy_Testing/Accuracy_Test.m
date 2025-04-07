@@ -80,14 +80,21 @@ for counter = 1:3
         hold off;
         viscircles(Rightcenters, Rightradii,'EdgeColor','b');
         colormap("Gray")
+           
+        % Calculate Z
+        d = (abs((xLeft - cxLeft) - (xRight - cxRight)) * ps);                     % disparity [mm]
+        CalcZCameraPers{framecounter} = ((baseline{counter} * f)/d)/1000;          % depth [m]
+        CalcZWorldPers{framecounter} = camDepth - CalcZCameraPers{framecounter};   % World Z [m]
 
-        d = (abs((xLeft - cxLeft) - (xRight - cxRight)) * ps); % disparity [mm]
-        CalcZCameraPers{framecounter} = ((baseline{counter} * f)/d)/1000;                % depth [m]
-        CalcZWorldPers{framecounter} = camDepth - CalcZCameraPers{framecounter};         % World Z [m]
-        CalcX{framecounter} = CalcZCameraPers{framecounter} * ((xLeft - cxLeft) * ps) / f;
-        CalcY{framecounter} = CalcZCameraPers{framecounter} * ((cyLeft - yLeft) * ps) / f;  % REVERSED because (0,0) in image is top left
+        % Calculate X
+        CalcXLeft = CalcZCameraPers{framecounter} * ((xLeft - cxLeft) * ps) / f;     % Left Camera 
+        CalcXRight = CalcZCameraPers{framecounter} * ((xRight - cxRight) * ps) / f;  % Right Camera
+        CalcX{framecounter} = (CalcXLeft + CalcXRight) / 2;                          % Average
         
-        
+        % Calculate Y (REVERSED from original equation because (0,0) in image is top left)
+        CalcYLeft = CalcZCameraPers{framecounter} * ((cyLeft - yLeft) * ps) / f;     % Left Camera 
+        CalcYRight = CalcZCameraPers{framecounter} * ((cyRight - yRight) * ps) / f;  % Right Camera
+        CalcY{framecounter} = (CalcYLeft + CalcYRight) / 2;                          % Average
 
         % Debug
         fprintf('Baseline: %d[mm], Calculated X: %d[m], Calculated Y: %d[m], Calculated Z: %d[m]', baseline{counter}, CalcX{framecounter}, CalcY{framecounter}, CalcZWorldPers{framecounter})
