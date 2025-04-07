@@ -34,7 +34,7 @@ for ball_pozish = 1:4
         throwaway = blenderLink(client,width,height,ballx(ball_pozish),bally(ball_pozish),ballz(ball_pozish),0,0,0,"tennisBall");
 
 
-        for counter = 1:1:3 %baseline 1, 2, 3 m
+        for counter = 0.06:0.01:0.08 %baseline 1, 2, 3 m
             
             %camera pozish update
             Camera1_baseline = (counter/2);
