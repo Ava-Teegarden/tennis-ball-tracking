@@ -1,6 +1,6 @@
 # Ignore file types
 *.png
-*blend1
+*.blend1
 
 # Ignore directories
 slprj/
