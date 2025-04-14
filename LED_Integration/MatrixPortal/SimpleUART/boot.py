@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2018 Kattni Rembor for Adafruit Industries
-#
-# SPDX-License-Identifier: MIT
+# Santiago Sanchez
+# SimpleUART Boot.py
+# Creates a separate COM Port to allow transfer of Binary data
+# without interference from REPL
 
-"""CircuitPython Essentials UART Serial example"""
 import usb_cdc
 
 usb_cdc.enable(console=True, data=True)

@@ -1,11 +1,7 @@
-# SPDX-FileCopyrightText: 2018 Kattni Rembor for Adafruit Industries
-#
-# SPDX-License-Identifier: MIT
+# Santiago Sanchez
+# Simple UART Code that writes to console 
 
 """CircuitPython Essentials UART Serial example"""
-import board
-import busio
-import digitalio
 import usb_cdc
 
 console = usb_cdc.data
