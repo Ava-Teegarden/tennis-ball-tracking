@@ -4,3 +4,4 @@
 
 # Ignore directories
 slprj/
+LED_Integration/MatrixPortal/SimpleUART/.vscode/
