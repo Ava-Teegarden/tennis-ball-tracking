@@ -8,3 +8,6 @@ GUI_Revision/Version 0.4_MOCK.zip
 # Ignore directories
 slprj/
 .vscode/
+
+# Exceptions
+!Support_Img_Files/checkerboard.png
