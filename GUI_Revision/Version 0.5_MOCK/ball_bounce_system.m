@@ -89,7 +89,7 @@ for frameCounter = 1:frameTimeMS:numFrames
             calcYLeft = calcZCam * ((xLeft - cxLeft) * ps) / f;
             calcYRight = calcZCam * ((xRight - cxRight) * ps) / f;
             CalcY = (calcYLeft + calcYRight) / 2;
-            % Calc Y
+            % Calc X
             calcXLeft = calcZCam * ((yLeft - cyLeft) * ps) / f;
             calcXRight = calcZCam * ((yRight - cyRight) * ps) / f;
             CalcX = (calcXLeft + calcXRight) / 2;
@@ -103,7 +103,7 @@ for frameCounter = 1:frameTimeMS:numFrames
         else
             if (leftCenters_Status == 1)
                 disp("Missed Ball detection on left Cam at Frame#" + frameCounter)
-                save_missing_left_frame = sprintf('CamLeft_Missing_Frame_%d', frameCounter);
+                % save_missing_left_frame = sprintf('CamLeft_Missing_Frame_%d', frameCounter);
                 
             end
             if (rightCenters_Status == 1)
