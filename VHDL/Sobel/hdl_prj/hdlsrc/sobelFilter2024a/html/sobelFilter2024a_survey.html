@@ -36,7 +36,7 @@ sobelFilter2024a
 Model version
 </td>
 <td align="right" valign="top" style="border-style: none">
-8.45
+8.65
 </td>
 
 </tr>
@@ -54,7 +54,7 @@ HDL Coder version
 HDL code generated on
 </td>
 <td align="right" valign="top" style="border-style: none">
-2025-04-09 17:29:44
+2025-04-15 15:59:06
 </td>
 
 </tr>
@@ -355,7 +355,181 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:12983')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15242')" name="code2model" class="code2model">
+color_correct_core
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+AXI4SlaveIDWidth
+</td>
+<td align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15243')" name="code2model" class="code2model">
+Video_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15244')" name="code2model" class="code2model">
+ctrl
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15267')" name="code2model" class="code2model">
+Video_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15268')" name="code2model" class="code2model">
+valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15269')" name="code2model" class="code2model">
 gaussian_conv_core
 </a>
 
@@ -397,7 +571,7 @@ Free running
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:12984')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15270')" name="code2model" class="code2model">
 Video_in
 </a>
 
@@ -430,7 +604,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:12985')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15271')" name="code2model" class="code2model">
 ctrl
 </a>
 
@@ -463,7 +637,7 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13008')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15294')" name="code2model" class="code2model">
 Line buffer
 </a>
 
@@ -487,7 +661,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13009')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15295')" name="code2model" class="code2model">
 Line buffer1
 </a>
 
@@ -511,7 +685,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13022')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15308')" name="code2model" class="code2model">
 Video_out
 </a>
 
@@ -544,7 +718,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13023')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15309')" name="code2model" class="code2model">
 valid_out
 </a>
 
@@ -577,7 +751,7 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13025')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15311')" name="code2model" class="code2model">
 just_gray_core
 </a>
 
@@ -619,7 +793,7 @@ Free running
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13026')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15312')" name="code2model" class="code2model">
 Video_in
 </a>
 
@@ -652,7 +826,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13027')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15313')" name="code2model" class="code2model">
 ctrl
 </a>
 
@@ -685,7 +859,7 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13045')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15326')" name="code2model" class="code2model">
 Video_out
 </a>
 
@@ -718,7 +892,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13046')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15327')" name="code2model" class="code2model">
 valid_out
 </a>
 
@@ -751,7 +925,181 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13048')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15328')" name="code2model" class="code2model">
+normalize image
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+AXI4SlaveIDWidth
+</td>
+<td align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15329')" name="code2model" class="code2model">
+Video_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15330')" name="code2model" class="code2model">
+ctrl
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15364')" name="code2model" class="code2model">
+Video_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15365')" name="code2model" class="code2model">
+valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15366')" name="code2model" class="code2model">
 sobel_horz_conv_core
 </a>
 
@@ -793,7 +1141,7 @@ Free running
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13049')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15367')" name="code2model" class="code2model">
 Video_in
 </a>
 
@@ -826,7 +1174,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13050')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15368')" name="code2model" class="code2model">
 ctrl
 </a>
 
@@ -859,7 +1207,7 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13073')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15391')" name="code2model" class="code2model">
 Line buffer
 </a>
 
@@ -883,7 +1231,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13074')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15392')" name="code2model" class="code2model">
 Line buffer1
 </a>
 
@@ -907,7 +1255,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13087')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15405')" name="code2model" class="code2model">
 Video_out
 </a>
 
@@ -940,7 +1288,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13088')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15406')" name="code2model" class="code2model">
 valid_out
 </a>
 
@@ -973,7 +1321,229 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13090')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15408')" name="code2model" class="code2model">
+sobel_horz_conv_core_alt
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+AXI4SlaveIDWidth
+</td>
+<td align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15409')" name="code2model" class="code2model">
+Video_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15410')" name="code2model" class="code2model">
+ctrl
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15433')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15434')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15447')" name="code2model" class="code2model">
+Video_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15448')" name="code2model" class="code2model">
+valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15450')" name="code2model" class="code2model">
 sobel_vert_conv_core
 </a>
 
@@ -1015,7 +1585,7 @@ Free running
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13091')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15451')" name="code2model" class="code2model">
 Video_in
 </a>
 
@@ -1048,7 +1618,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13092')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15452')" name="code2model" class="code2model">
 ctrl
 </a>
 
@@ -1081,7 +1651,7 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13115')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15475')" name="code2model" class="code2model">
 Line buffer
 </a>
 
@@ -1105,7 +1675,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13116')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15476')" name="code2model" class="code2model">
 Line buffer1
 </a>
 
@@ -1129,7 +1699,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13129')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15489')" name="code2model" class="code2model">
 Video_out
 </a>
 
@@ -1162,7 +1732,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13130')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15490')" name="code2model" class="code2model">
 valid_out
 </a>
 
@@ -1195,7 +1765,229 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13132')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15492')" name="code2model" class="code2model">
+sobel_vert_conv_core_alt
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+AXI4SlaveIDWidth
+</td>
+<td align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15493')" name="code2model" class="code2model">
+Video_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15494')" name="code2model" class="code2model">
+ctrl
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15517')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15518')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15531')" name="code2model" class="code2model">
+Video_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15532')" name="code2model" class="code2model">
+valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15534')" name="code2model" class="code2model">
 sqrt_threshold
 </a>
 
@@ -1237,7 +2029,7 @@ Free running
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13133')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15535')" name="code2model" class="code2model">
 Video_in_horz
 </a>
 
@@ -1270,7 +2062,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13134')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15536')" name="code2model" class="code2model">
 ctrl
 </a>
 
@@ -1303,7 +2095,7 @@ Pixel Control Bus
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13135')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15537')" name="code2model" class="code2model">
 Video_in_vert
 </a>
 
@@ -1336,7 +2128,7 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13211')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15613')" name="code2model" class="code2model">
 Line buffer
 </a>
 
@@ -1360,7 +2152,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13212')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15614')" name="code2model" class="code2model">
 Line buffer1
 </a>
 
@@ -1384,7 +2176,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13230')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15632')" name="code2model" class="code2model">
 Line buffer
 </a>
 
@@ -1408,7 +2200,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13231')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15633')" name="code2model" class="code2model">
 Line buffer1
 </a>
 
@@ -1432,7 +2224,7 @@ on
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13244')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15646')" name="code2model" class="code2model">
 Video_out
 </a>
 
@@ -1465,7 +2257,613 @@ Pixel Data
 
 </table>
 <br /><br /><b>
-Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:13245')" name="code2model" class="code2model">
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15647')" name="code2model" class="code2model">
+valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15649')" name="code2model" class="code2model">
+sqrt_threshold1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+AXI4SlaveIDWidth
+</td>
+<td align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15650')" name="code2model" class="code2model">
+Video_in_horz
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15651')" name="code2model" class="code2model">
+ctrl
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15652')" name="code2model" class="code2model">
+Video_in_vert
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15728')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15729')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15747')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15748')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15761')" name="code2model" class="code2model">
+Video_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15762')" name="code2model" class="code2model">
+valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15764')" name="code2model" class="code2model">
+sqrt_threshold2
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+AXI4SlaveIDWidth
+</td>
+<td align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15765')" name="code2model" class="code2model">
+Video_in_horz
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15766')" name="code2model" class="code2model">
+ctrl
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Control Bus
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15767')" name="code2model" class="code2model">
+Video_in_vert
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15843')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15844')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15862')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15863')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15876')" name="code2model" class="code2model">
+Video_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Video Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Pixel Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('sobelFilter2024a:15877')" name="code2model" class="code2model">
 valid_out
 </a>
 
