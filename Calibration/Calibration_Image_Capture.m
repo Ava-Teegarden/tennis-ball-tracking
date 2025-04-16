@@ -65,9 +65,13 @@ for pattern_row = 1:5
         fprintf("/n");
         fprintf(file_name_left);
         fprintf("/n");
-
+        
+        cd("ImageCalRight\");
         imwrite(leftImage, file_name_right);
+        cd("..\");
+        cd("ImageCalLeft\");
         imwrite(rightImage, file_name_left);
+        cd("..\");
 
         axis tight
         subplot(1,2,1);
