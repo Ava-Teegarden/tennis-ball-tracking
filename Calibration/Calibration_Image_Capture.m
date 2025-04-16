@@ -9,7 +9,7 @@ close all;
 width = 752;  % 480p: 752, 480
 height = 480; % 1080p: 1920, 1080
 
-baseline = 1000;  % Keeping baseline constant 
+baseline = 1;  % Keeping baseline constant [m]
 CamLeftX = - (baseline / 2);  
 CamRightX = (baseline / 2);
 CamY = 0;
@@ -39,37 +39,44 @@ server_port = 55001;           %Server Port of the Unity Sever
 client = tcpclient(server_ip,server_port,"Timeout",20);
 fprintf(1,"Connected to server\n");
 
-%move ball 4 times each
-for pattern_pozish = 1:20
+%move Pattern total of 20 times
+for pattern_row = 1:5
+    for pattern_col = 1:4
+        %set position
+        throwaway = blenderLink(client,width,height,patternX(pattern_row, pattern_col), ...
+            patternY(pattern_row, pattern_col), ...
+            patternZ(pattern_row, pattern_col), ...
+            patternPitch(pattern_row, pattern_col), ...
+            patternRoll(pattern_row, pattern_col), ...
+            patternYaw(pattern_row, pattern_col),"Calibration_Pattern");
 
-    %set position
-    throwaway = blenderLink(client,width,height,patternX(pattern_pozish),patternY(pattern_pozish),patternZ ...
-        (pattern_pozish),patternPitch,patternRoll,patternYaw,"Calibration_Pattern");
+        %take pics at current baselines
+        leftImage = blenderLink(client,width,height,CamLeftX,CamY,CamZ,CamPitch,CamRoll,CamYaw,"Camera");
+        rightImage = blenderLink(client,width,height,CamRightX,CamY,CamZ,CamPitch,CamRoll,CamYaw,"Camera");
 
-    %take pics at current baselines
-    leftImage = blenderLink(client,width,height,CamLeftX,CamY,CamZ,CamPitch,CamRoll,CamYaw,"Camera");
-    rightImage = blenderLink(client,width,height,CamRightX,CamY,CamZ,CamPitch,CamRoll,CamYaw,"Camera");
+        %save image in [baseline]_Cam[L/R]_[Ball x]_[Ball Y]_[Ball Z].png
+        file_name_right = sprintf('CamRight_%s_%s_%s.png', num2str(patternX(pattern_row, pattern_col)), ...
+            num2str(patternY(pattern_row, pattern_col)), num2str(patternZ(pattern_row, pattern_col)));
 
-    %save image in [baseline]_Cam[L/R]_[Ball x]_[Ball Y]_[Ball Z].png
-    file_name_right = sprintf('CamRight_%s_%s_%s.png', num2str(patternX(pattern_pozish)), num2str(patternY(pattern_pozish)), num2str(patternZ(pattern_pozish)));
+        file_name_left = sprintf('CamLeft_%s_%s_%s.png', num2str(patternX(pattern_row, pattern_col)), ...
+            num2str(patternY(pattern_row, pattern_col)), num2str(patternZ(pattern_row, pattern_col)));
 
-    file_name_left = sprintf('CamLeft_%s_%s_%s.png', num2str(patternX(pattern_pozish)), num2str(patternY(pattern_pozish)), num2str(patternZ(pattern_pozish)));
+        fprintf(file_name_right);
+        fprintf("/n");
+        fprintf(file_name_left);
+        fprintf("/n");
 
-    fprintf(file_name_right);
-    fprintf("/n");
-    fprintf(file_name_left);
-    fprintf("/n");
+        imwrite(leftImage, file_name_right);
+        imwrite(rightImage, file_name_left);
 
-    imwrite(leftImage, file_name_right);
-    imwrite(rightImage, file_name_left);
-
-    axis tight
-    subplot(1,2,1);
-    imagesc(leftImage)
-    set(gcf, 'Position', get(0, 'Screensize'));
-    axis off
-    subplot(1,2,2);
-    imagesc(rightImage)
+        axis tight
+        subplot(1,2,1);
+        imagesc(leftImage)
+        set(gcf, 'Position', get(0, 'Screensize'));
+        axis off
+        subplot(1,2,2);
+        imagesc(rightImage)
+    end
 end
 
 fprintf("/ncompleted printing your images sir")

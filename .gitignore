@@ -4,6 +4,7 @@ GUI_Revision/Version 0.4_MOCK.zip
 # Ignore file types
 *.png
 *.blend1
+*.asv
 
 # Ignore directories
 slprj/
