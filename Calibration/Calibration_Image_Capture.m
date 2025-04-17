@@ -27,7 +27,7 @@ patternY = Ymin + (Ymax-Ymin).*rand(5,4);
 patternZ = 3 .* ones(5,4);  % Keep constant for now at 3m
 
 % Pattern Pitch, Roll, Yaw (% 5 row x 4 Column of random angles)
-angleMin = 0; angleMax = 45;
+angleMin = 0; angleMax = 15;
 patternPitch = randi([angleMin,angleMax], [5,4]);  
 patternRoll  = randi([angleMin,angleMax], [5,4]);
 patternYaw   = randi([angleMin,angleMax], [5,4]);
