@@ -1,0 +1,5 @@
+Count - 3
+sobelFilter2024a/conv_core/sqrt_threshold
+sobelFilter2024a/conv_core/sqrt_threshold1
+sobelFilter2024a/conv_core/sqrt_threshold2
+
