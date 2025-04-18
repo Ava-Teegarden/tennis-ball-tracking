@@ -1,12 +1,21 @@
-# Santiago Sanchez
-# Simple UART Code that writes to console 
+# Santiago Sanchez 
+# Simple UART Communication using TX & RX pins on
+# Matrix Portal Board
 
 """CircuitPython Essentials UART Serial example"""
-import usb_cdc
+import board
+import busio
+import digitalio
 
-console = usb_cdc.data
-console.write(bytes(b"Hello World\n"))
+uart = busio.UART(board.TX, board.RX, baudrate=115200)
 
 while True:
-    console.write(bytes(b"Hello World\n"))
-    
+    data = uart.read(8)  # read up to 32 bytes
+    # print(data)  # this is a bytearray type
+
+    if data is not None:
+
+        # convert bytearray to string
+        uart.write(data)
+
+
