@@ -3,10 +3,12 @@
 % Starter script to connect to COM Port
 
 % Create COM Port
-port = serialport("COM5",9600, "Timeout",5);
+port = serialport("COM13",9600, "Timeout",5);
 
-data = read(port,3,"string");
+% Write something to COM Port
+write(port, 1,"uint8");
 
-disp(data)
+% Clear when done communicating to reuse script
+clear;
 
 

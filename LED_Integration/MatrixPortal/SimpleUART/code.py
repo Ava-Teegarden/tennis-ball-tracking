@@ -7,7 +7,7 @@ import board
 import busio
 import digitalio
 
-uart = busio.UART(board.TX, board.RX, baudrate=115200)
+uart = busio.UART(board.TX, board.RX, baudrate=9600)
 
 while True:
     data = uart.read(8)  # read up to 32 bytes
