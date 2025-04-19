@@ -127,8 +127,12 @@ lines = [
 even_lines = lines[0::2]
 odd_lines = lines[1::2]
 
+# Colors
+RED = 0
+GREEN = 85
+
 # Scroll a top text and a bottom text
-def scroll(t, b):
+def scroll(t, b, color):
     # Add spaces to the start and end of each label so that it goes from
     # the far right all the way off the left
     sp = b' ' * linelen
@@ -139,7 +143,7 @@ def scroll(t, b):
     for i in range(maxlen-linelen):
         # Set the letter displayed at each position, and its color
         for j in range(linelen):
-            sh[j][1] = colorwheel(3 * (2*i+j))
+            sh[j][1] = colorwheel(color)
             tg1[j][0] = charmap[t[i+j]]
             tg2[j][0] = charmap[b[i+j]]
         # And then for each pixel position, move the two labels
@@ -163,8 +167,8 @@ while True:
 
         if val == 1:
             #for e, o in zip(even_lines, odd_lines):
-            scroll(even_lines[0], odd_lines[0])
+            scroll(even_lines[0], odd_lines[0], GREEN)
         else:
-            scroll(even_lines[1], odd_lines[1])
+            scroll(even_lines[1], odd_lines[1], RED)
 
 
