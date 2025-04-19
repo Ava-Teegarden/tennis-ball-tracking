@@ -1,0 +1,28 @@
+ --> conv_core_ip_src_conv_core_pkg
+sobelFilter2024a/conv_core/color_correct_core/Subsystem1 --> conv_core_ip_src_Subsystem1
+sobelFilter2024a/conv_core/color_correct_core --> conv_core_ip_src_color_correct_core
+sobelFilter2024a/conv_core/gaussian_conv_core/Subsystem1/slicer/SimpleDualPortRAM_generic --> conv_core_ip_src_SimpleDualPortRAM_generic
+sobelFilter2024a/conv_core/gaussian_conv_core/Subsystem1/slicer --> conv_core_ip_src_slicer
+sobelFilter2024a/conv_core/gaussian_conv_core/Subsystem1 --> conv_core_ip_src_Subsystem1_block
+sobelFilter2024a/conv_core/gaussian_conv_core --> conv_core_ip_src_gaussian_conv_core
+sobelFilter2024a/conv_core/just_gray_core/Subsystem1 --> conv_core_ip_src_Subsystem1_block1
+sobelFilter2024a/conv_core/just_gray_core --> conv_core_ip_src_just_gray_core
+sobelFilter2024a/conv_core/normalize image/Subsystem1 --> conv_core_ip_src_Subsystem1_block2
+sobelFilter2024a/conv_core/normalize image --> conv_core_ip_src_normalize_image
+sobelFilter2024a/conv_core/sobel_horz_conv_core/Subsystem1/slicer --> conv_core_ip_src_slicer_block
+sobelFilter2024a/conv_core/sobel_horz_conv_core/Subsystem1 --> conv_core_ip_src_Subsystem1_block3
+sobelFilter2024a/conv_core/sobel_horz_conv_core --> conv_core_ip_src_sobel_horz_conv_core
+sobelFilter2024a/conv_core/sobel_horz_conv_core_alt/Subsystem1/slicer --> conv_core_ip_src_slicer_block1
+sobelFilter2024a/conv_core/sobel_horz_conv_core_alt/Subsystem1 --> conv_core_ip_src_Subsystem1_block4
+sobelFilter2024a/conv_core/sobel_horz_conv_core_alt --> conv_core_ip_src_sobel_horz_conv_core_alt
+sobelFilter2024a/conv_core/sobel_vert_conv_core/Subsystem1/slicer --> conv_core_ip_src_slicer_block2
+sobelFilter2024a/conv_core/sobel_vert_conv_core/Subsystem1 --> conv_core_ip_src_Subsystem1_block5
+sobelFilter2024a/conv_core/sobel_vert_conv_core --> conv_core_ip_src_sobel_vert_conv_core
+sobelFilter2024a/conv_core/sobel_vert_conv_core_alt/Subsystem1/slicer --> conv_core_ip_src_slicer_block3
+sobelFilter2024a/conv_core/sobel_vert_conv_core_alt/Subsystem1 --> conv_core_ip_src_Subsystem1_block6
+sobelFilter2024a/conv_core/sobel_vert_conv_core_alt --> conv_core_ip_src_sobel_vert_conv_core_alt
+sobelFilter2024a/conv_core/sqrt_threshold/Subsystem2/slicer --> conv_core_ip_src_slicer_block4
+sobelFilter2024a/conv_core/sqrt_threshold/Subsystem2/slicer1 --> conv_core_ip_src_slicer1
+sobelFilter2024a/conv_core/sqrt_threshold/Subsystem2 --> conv_core_ip_src_Subsystem2
+sobelFilter2024a/conv_core/sqrt_threshold --> conv_core_ip_src_sqrt_threshold
+sobelFilter2024a/conv_core --> conv_core_ip_src_conv_core
